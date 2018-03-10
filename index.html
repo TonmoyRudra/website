@@ -9,7 +9,22 @@
 	<meta name="author" content="Tonmoy Rudra">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tonmoy Rudra - Software Engineer</title>
-	<link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+	<link rel="icon" href="images/tonmoy.jpg" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css"
+	    integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	    crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+	    crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe"
+	    crossorigin="anonymous"></script>
+
 
 	<style type="text/css">
 		body {
@@ -17,7 +32,15 @@
 			font-family: sans-serif;
 		}
 
-		.post {
+		.box-resize {
+			margin-bottom: 20px;
+		}
+
+		.card {
+			padding: 20px;
+		}
+
+		.card {
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
@@ -32,16 +55,27 @@
 			border: 1px solid;
 			border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 		}
-
+		.card p{
+			font-size: 20px;
+			color: #0a7fe6;
+			font-weight: bold;
+			letter-spacing: 3px;
+			border-bottom: 3px solid;
+		}
 		p {
 			margin-top: 0;
 		}
-
+		
+		b a{
+			color: #dc3545;
+		}
 		a {
 			text-decoration: none;
-			color: none;
 		}
-
+		
+		li{
+			font-size: 12px;
+		}
 		.vio {
 			height: 150px;
 			width: 100%;
@@ -51,421 +85,550 @@
 			height: 150px;
 			width: 150px;
 			float: left;
+			border-radius: 12%;
 		}
 
 		.detail {
 			float: left;
-			padding-left: 15px;
+			/* padding-left: 15px; */
 		}
+
+		.font-size {
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		blockquote{
+			border-left: 3px solid #bbb8b8;
+			padding: 9px;
+			border-radius: 7px;
+		}
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.name{
+				font-size: 24px;
+				font-weight: bold;
+				padding-top: 10px;
+			}
+		} 
 	</style>
 
 </head>
 
-<body>
-
-	<div class='post'>
-
-		<div class="vio">
-
-			<div>
-				<img class="profile" src="images/logo.jpg">
+<body class="container" style="width: 75%;">
+	<div class="card ">
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<img class="profile img-responsive " src="images/tonmoy.jpg">
 			</div>
 
-			<div class="detail">
-				<h1>Tonmoy Rudra</h1>
-				<b>Software Engineer, Bangladesh</b><br><br>
-				<a href="tel:+880" target="_blank"><img title="Call Now" style="height: 30px;" src="images/call.png"></a>
-				<a href="mailto:tonmoyrudra1@gmail.com"><img title="Send Email" style="height: 30px;" src="images/gmail.png"></a>
-				<a href="https://www.linkedin.com/in/tonmoyrudra" target="_blank"><img title="LinkedIn Profile" style="height: 30px;" src="images/linkedin.png"></a>
-				<a href="https://www.facebook.com/rudratonmoy" target="_blank"><img title="Facebook Profile" style="height: 30px;" src="images/facebook.png"></a>
-				<a href="https://github.com/" target="_blank"><img title="GitHub Profile" style="height: 30px;" src="images/github.png"></a>
+			<div class="detail col-md-6 col-sm-12">
+				<h1 class="name">Tonmoy Rudra</h1>
+				<b>Software Engineer, Bangladesh</b>
+				<br>
+				<br>
+				<a href="tel:+880" target="_blank">
+					<img class="img-responsive" title="Call Now" style="height: 30px;" src="images/call.png">
+				</a>
+				<a href="mailto:tonmoyrudra1@gmail.com">
+					<img class="img-responsive" title="Send Email" style="height: 30px;" src="images/gmail.png">
+				</a>
+				<a href="https://www.linkedin.com/in/tonmoyrudra" target="_blank">
+					<img class="img-responsive" title="LinkedIn Profile" style="height: 30px;" src="images/linkedin.png">
+				</a>
+				<a href="https://www.facebook.com/rudratonmoy" target="_blank">
+					<img class="img-responsive" title="Facebook Profile" style="height: 30px;" src="images/facebook.png">
+				</a>
+				<a href="https://github.com/" target="_blank">
+					<img class="img-responsive" title="GitHub Profile" style="height: 30px;" src="images/github.png">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class='card'>
+
+		<p>Summary</p>
+		<br>
+		<small style="font-size: 13px;text-align: justify;">
+			Hello!! Myself <b>Tonmoy Rudra.</b> I acquired my Bachelor's Degree in "<b>Computer Science And Engineering</b>"​ 
+			From "<b>International Islamic University ,Chittagong ( IIUC ) </b>"​. 
+			<br>
+			<br>
+			<blockquote> I wish to work in an organization that can quench my thirst for knowledge 
+			and provide space to learn and gain experience in the field of software development 
+			while being resourceful, innovative and flexible. I aim to capitalize on these experiences 
+			to drive my career forward.</blockquote></small>
+
+
+	</div>
+
+	<div class='card '>
+		<!--style="width: 210px; height: 35px; float: left; margin-bottom: 20px;"-->
+		<p>Skills</p>
+		<br>
+		<div class="row">
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/angular.png">
+				<b style="float: left;">Anjular JS</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/nodejs.png">
+				<b style="float: left;">Node.JS</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/rxjs.png">
+				<b style="float: left;">RX JS</b>
+				<br>
+				<small>Beginner</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/oop.png">
+				<b style="float: left;">OOP</b>
+				<br>
+				<small>Professional</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/asp.png">
+				<b style="float: left;">ASP .net</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/sqlserver.png">
+				<b style="float: left;">SQL Server</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/cassandra.png">
+				<b style="float: left;">Cassandra</b>
+				<br>
+				<small>Beginner</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/html5.png">
+				<b style="float: left;">HTML5</b>
+				<br>
+				<small>Professional</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/css3.png">
+				<b style="float: left;">CSS3</b>
+				<br>
+				<small>Professional</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/js.png">
+				<b style="float: left;">JavaScript</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/bootstrap.png">
+				<b style="float: left;">Bootstrap</b>
+				<br>
+				<small>Professional</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/semantic.png">
+				<b style="float: left;">Semantic UI</b>
+				<br>
+				<small>Beginner</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/mvc.png">
+				<b style="float: left;">MVC Framework</b>
+				<br>
+				<small>Beginner</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/mysql.png">
+				<b style="float: left;">MySQL</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/php.png">
+				<b style="float: left;">PHP</b>
+				<br>
+				<small>Beginner</small>
+			</div>
+
+			<div class="col-md-4 box-resize">
+				<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/ps.png">
+				<b style="float: left;">Photoshop</b>
+				<br>
+				<small>Intermediate</small>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Experience -->
+	<div class='card'>
+		<p>Experience</p>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 69px; float: right;" src="images/sa.png">
+				<b>
+					<a href="http://surroundapps.com/" target="_blank">SurroundApps Inc.</a>
+				</b>
+				<br>
+				<small class="font-size">Junior Software Engineer</small>
+				<br>
+				<small>January 2017 - Present || Dhaka, Bangladesh</small>
+				<br>
+				<small>
+					<span>Responsibility : </span>
+					<div style="margin-left: 25px;">
+						<li>Develop “Web API Services” with Node.js, Rx.JS, Cassandra (no SQL ).</li>
+						<li>Integrate Web API Services with Client Side (Web)</li>
+						<li>Develop web application using Asp.Net MVC, C#, MSSQL, jQuery, Ajax</li>
+						<li>Web application Development using Angular JS , & integrate web service.</li>
+						<li>Improve Debugging log with a test case.</li>
+						<li>Payment Gateway (SSL Commerce & PayPal) integration on a web application.</li>
+						<li>Database Support </li>
+						<li>Front End Designer</li>
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 40px; float: right;" src="images/nerd.png">
+				<b>
+					<a href="http://nerdcastlebd.com/" target="_blank">Nerd Castle Ltd.</a>
+				</b>
+				<br>
+				<small class="font-size">Trainee Software Engineer & Assistent Trainer</small>
+				<br>
+				<small>Octobar 2016 - December 2016 || Dhaka, Bangladesh</small>
+				<br>
+				<small>
+					<span>Responsibility : </span>
+					<div style="margin-left: 25px;">
+						<li>Assistent trainer - ASP dotNET MVC.</li>
+						<li>Develop web application with ASP dotNET, MVC, SQL Server.</li>
+
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 40px; float: right;" src="images/omi.jpg">
+				<b>
+					<a href="#" target="_blank">Omicron IT.</a>
+				</b>
+				<br>
+				<small class="font-size">Web developer</small>
+				<br>
+				<small>June 2015 - November 2016 || Chittagong, Bangladesh</small>
+				<br>
+				<small>
+					<span>Responsibility : </span>
+					<div style="margin-left: 25px;">
+						<li>Developed & Design Web based application with PHP, HTML, CSS, Bootstrap etc.</li>
+						<li>Design Database & Manage Client.</li>
+					</div>
+				</small>
+				<br>
+				<br>
 			</div>
 
 		</div>
+	</div>
+	<!-- Projects -->
+	<div class='card'>
+		<p>Projects</p>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/nodejs.png">
+				<b>
+					<a href="http://surroundapps.com/alertfamily//" target="_blank">Server side Scripting</a>
+				</b>
+				<br>
+				<small>Server Side Scripting with Node.Js, Rx.Js etc. </small>
+				<br>
+				<small>Feb 2017 - Present </small>
+				<br>
+				<small>
+					<span>Description : </span>
+					<div style="margin-left: 25px;">
+						<li>Develop “Web API Services” with Node.js, Rx.JS, Cassandra (no SQL).</li>
+						<li>
+							<a href="#" target="_blank">Project URL-(Confidential)</a>
+						</li>
 
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/af.png">
+				<b>
+					<a href="http://surroundapps.com/alertfamily//" target="_blank">Alert Family (সতর্ক পরিবার)</a>
+				</b>
+				<br>
+				<small>Server Side Scripting and Web based Development </small>
+				<br>
+				<small>Feb 2017 - Dec 2017 </small>
+				<br>
+				<small>
+					<span>Description : </span>
+					<div style="margin-left: 25px;">
+						<li>Alert Family (Beta) allows you to view your family members on a map, talk to them and also receive panic alert notifications
+							when your loved ones are at risk. They can send out live alerts, SMS or start streaming live audio so that you can
+							monitor their surroundings.
+							<a href="http://surroundapps.com/alertfamily/" target="_blank">Read More..</a>
+						</li>
+						<li>
+							<a href="http://surroundapps.com/alertfamily/download/" target="_blank">Project URL-(Mobile Application)</a>
+						</li>
+
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/bmqa.png">
+				<b>
+					<a href="http://bengalmobileqa.com/" target="_blank">Bengal Mobile QA Solutions</a>
+				</b>
+				<br>
+				<small>Web Design and Development</small>
+				<br>
+				<small>June 2017 - June 2017 </small>
+				<br>
+				<small>
+					<span>Description : </span>
+					<div style="margin-left: 25px;">
+						<li>This is a full responsive website for Bengal Mobile QA Solutions.</li>
+						<li>Bengal Mobile QA Solution is a full service Technology development and IT Services provider firm.
+							<a href="http://bengalmobileqa.com/about.html" target="_blank">Read More..</a>
+						</li>
+						<li>
+							<a href="http://bengalmobileqa.com/" target="_blank">Project URL</a>
+						</li>
+
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/demo.jpg">
+				<b>
+					<a href="http://surroundapps.com/alertfamily//" target="_blank">University Theses and Project Automation System</a>
+				</b>
+				<br>
+				<small>Web Development with asp.Net (Academical Project) </small>
+				<br>
+				<small>April 2016 - Dec 2016</small>
+				<br>
+				<small>
+					<span>Description : </span>
+					<div style="margin-left: 25px;">
+						<li>University Thesis/Project Automation System (UTPAS) deals with web based. The project will be developed in ASP.Net
+							MVC Framework with back-end: C#, HTML5, CSS3, JavaScript as code, MSSQL as database for giving a better service to
+							the university and we hope that by this system they can handle their problem very easily. It includes many management
+							tools for administrator, students and teachers. This site can be used in 5 panels: Student Panel, Supervisor Panel,
+							External Panel, Reviewer Panel and Admin Panel.
+						</li>
+						<li>
+							<a href="#" target="_blank">Project URL- (Confidential)</a>
+						</li>
+
+					</div>
+				</small>
+				<br>
+				<br>
+			</div>
+		</div>
 	</div>
 
-	<div class='post'>
-
-		<p>Summary</p><br>
-
-		<small>Summary here</small>
-
+	<!-- Education -->
+	<div class='card'>
+		<p>Education</p>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/iiuc.png">
+				<b>
+					<a href="http://iiuc.ac.bd/" target="_blank">International Islamic University Chittagong (IIUC)</a>
+				</b>
+				<br>
+				<small>B.Sc in Computer Science & Engineering (CSE) </small>
+				<br>
+				<small>2012 - 2016 </small>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/htdc.jpg">
+				<b>
+					<a href="http://htdc.edu.bd/" target="_blank">Hazera Taju University College (HTDC)</a>
+				</b>
+				<br>
+				<small>Higher Secondary School Cirtificate (HSC)</small>
+				<br>
+				<small>2010 - 2012</small>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/cghs.png">
+				<b>
+					<a href="http://www.cghs.gov.bd/" target="_blank">Chittagong Govt High School (CGHS)</a>
+				</b>
+				<br>
+				<small>Secondray School Cirtificate (SSC) </small>
+				<br>
+				<small>2005 - 2010</small>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
 	</div>
 
-	<!--
-	<div class='post'>
-
-		<p>Experience</p><br>
-
-		<img style="height: 50px; float: right;" src="images/bharaa.png">
-		<b>Founder</b><br>
-		<small><a href="https://bharaa.com/" target="_blank">Bharaa.com</a></small><br>
-		<small>December 2017 – Present | Bangladesh</small><br><br>
-		
-		<br><br>
-
-
-
-		<img style="height: 50px; float: right;" src="images/cdn.png">
-		<b>Founder & CEO</b><br>
-		<small><a href="http://cdnmaker.com/" target="_blank">CDN Maker</a></small><br>
-		<small>September 2017 – Present | Bangladesh</small>
-	  
-	</div>
-	-->
-
-	<div style="height: 500px;" class='post'>
-
-		<p>Skills</p><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/angular.png">
-			<b style="float: left;">Anjular JS</b><br>
-			<small>Intermediate</small>
+	<!-- Cirtification -->
+	<div class='card'>
+		<p>Cirtification</p>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/bitm.png">
+				<b>
+					<a href="#" target="_blank">Web Application Development- Dot Net</a>
+				</b>
+				<br>
+				<small>BASIS Institute of Technology & Management (BITM)</small>
+				<br>
+				<small>May 2016 – Jul 2016 (3 months)</small>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/ict.png">
+				<b>
+					<a href="#" target="_blank">National Mobile Apps Trainer and Apps Development Program</a>
+				</b>
+				<br>
+				<small>ICT Division, Bangladesh Goverment</small>
+				<br>
+				<small>Mar 2015 – Sep 2015 (5 months)</small>
+				<br>
+				<br>
+				<br>
+			</div>
 		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/nodejs.png">
-			<b style="float: left;">Node.JS</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/rxjs.png">
-			<b style="float: left;">RX JS</b><br>
-			<small>Beginner</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/asp.png">
-			<b style="float: left;">ASP .net</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/sqlserver.png">
-			<b style="float: left;">SQL Server</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/cassendra.png">
-			<b style="float: left;">Cassendra</b><br>
-			<small>Beginner</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/html5.png">
-			<b style="float: left;">HTML5</b><br>
-			<small>Professional</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/css3.png">
-			<b style="float: left;">CSS3</b><br>
-			<small>Professional</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/js.png">
-			<b style="float: left;">JavaScript</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/bootstrap.png">
-			<b style="float: left;">Bootstrap</b><br>
-			<small>Professional</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/semantic.png">
-			<b style="float: left;">Semantic UI</b><br>
-			<small>Beginner</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/mvc.png">
-			<b style="float: left;">MVC Framework</b><br>
-			<small>Beginner</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/mysql.png">
-			<b style="float: left;">MySQL</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/php.png">
-			<b style="float: left;">PHP</b><br>
-			<small>Beginner</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/adobe.png">
-			<b style="float: left;">Photoshop</b><br>
-			<small>Intermediate</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/oop.png">
-			<b style="float: left;">OOP</b><br>
-			<small>Professional</small>
-		</div>
-
 	</div>
 
-	<div class='post'>
 
-		<p>Projects</p><br>
+	<div class='card'>
 
-		<img style="height: 50px; float: right;" src="images/bharaa.png">
-		<b><a href="https://www.bharaa.com/" target="_blank">Bharaa.com</a></b><br>
-		<small>Design</small><br>
-		<small>December 2017 | Bangladesh</small><br><br>
+		<p>Languages</p>
+		<br>
 
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/cdn.png">
-		<b><a href="http://www.cdnmaker.com/" target="_blank">CDN Maker</a></b><br>
-		<small>Design</small><br>
-		<small>September 2017 | Bangladesh</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/mypersonlist.png">
-		<b><a href="mypersonlist.mp4" target="_blank">myPersonList</a></b><br>
-		<small>Design & Develope</small><br>
-		<small>Jun 2017 | Bangladesh</small>
-
-	</div>
-
-	<div class='post'>
-
-		<p>Workes</p><br>
-
-		<img style="height: 50px; float: right;" src="images/jugbd.jpg">
-		<b><a href="https://www.facebook.com/bdjug/photos/g.532076960172327/1852210655094069/?type=1&theater&ifg=1" target="_blank">Cover Photo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>August 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work6.png">
-		<b><a href="work6.png" target="_blank">Fashion Showroom Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>May 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work7.png">
-		<b><a href="work7.png" target="_blank">Furniture Showroom Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>May 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work1.png">
-		<b><a href="work1.png" target="_blank">University Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>April 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work2.png">
-		<b><a href="work2.png" target="_blank">Airlines Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>April 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work3.png">
-		<b><a href="work3.png" target="_blank">Pastry Shop Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>April 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work4.png">
-		<b><a href="work4.png" target="_blank">Fashion House Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>April 2017</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/work5.png">
-		<b><a href="work5.png" target="_blank">IT Company Logo</a></b><br>
-		<small>Graphic Design</small><br>
-		<small>April 2017</small>
-
-	</div>
-
-	<div class='post'>
-
-		<p>Education</p><br>
-
-		<img style="height: 50px; float: right;" src="images/aitvet.jpg">
-		<b>Ahsanullah Institute of Technical and Vocational Education And Training</b><br>
-		<small>Computer Technology</small><br>
-		<small>Jul 2013 – Nov 2017 | Bangladesh</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/phs.jpg">
-		<b>Pagla High School</b><br>
-		<small>Business Studies</small><br>
-		<small>Jan 2008 – Jan 2013 | Bangladesh</small>
-
-	</div>
-
-	<div class='post'>
-
-		<p>Certifications</p><br>
-
-		<img style="height: 50px; float: right;" src="images/horizon.png">
-		<b>Java Enterprise Edition</b><br>
-		<small>New Horizons Computer Learning Centers</small><br>
-		<small>Feb 2017 – Jun 2017 | Bangladesh</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/unitatedit.png">
-		<b>Graphic Design</b><br>
-		<small>United IT Bangladesh</small><br>
-		<small>April 2017 – Jun 2017 | Bangladesh</small><br><br>
-
-		<br><br>
-
-		<img style="height: 50px; float: right;" src="images/horizon.png">
-		<b>Java Standard Edition</b><br>
-		<small>New Horizons Computer Learning Centers</small><br>
-		<small>Dec 2016 – Feb 2017 | Bangladesh</small>
-
-	</div>
-
-	<div style="height: 210px;" class='post'>
-
-		<p>Languages</p><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/bd.png">
-			<b style="float: left;">Bangla</b><br>
+		<div class="col-md-4 box-resize">
+			<img class="img-responsive" style="height: 35px; float: left; margin-right: 5px;" src="images/bd.png">
+			<b style="float: left;">Bangla</b>
+			<br>
 			<small>Read . Write . Talk</small>
 		</div>
 
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 10px;" src="images/us.png">
-			<b style="float: left;">English</b><br>
+		<div class="col-md-4 box-resize">
+			<img class="img-responsive" style="height: 35px; float: left; margin-right: 10px;" src="images/us.png">
+			<b style="float: left;">English</b>
+			<br>
 			<small>Read . Write . Talk</small>
 		</div>
 
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/soudi.png">
-			<b style="float: left;">Arabic</b><br>
-			<small>Read . Write</small>
-		</div>
-
-		<br><br>
-		<br><br>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/pk.png">
-			<b style="float: left;">Urdu</b><br>
-			<small>Talk</small>
-		</div>
-
-		<div style="width: 210px; height: 35px; float: left; margin-bottom: 20px;">
-			<img style="height: 35px; float: left; margin-right: 5px;" src="images/in.png">
-			<b style="float: left;">Hindi</b><br>
-			<small>Talk</small>
-		</div>
-
 	</div>
 
-	<div " class='post'>
+	<!-- MemberShip -->
+	<div class='card'>
+		<p>Member Ship</p>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" style="height: 50px; float: right;" src="images/bcs.jpg">
+				<b>
+					<a href="http://www.bcsbd.org.bd/" target="_blank">Bangladesh Computer Society</a>
+				</b>
+				<br>
+				<small>
+					<strong>Membership Type:</strong> Associate Member </small>
+				<br>
+				<small>
+					<strong>Membership No.:</strong> AM-12495 </small>
+				<br>
+				<small>
+					<strong>Validation:</strong> 2018 - 2021 </small>
+				<br>
+				<br>
+				<br>
+			</div>
 
-		<p>Membership</p><br>
-
-		<img style="height: 50px; float: right; " src="images/jugbd.png ">
-		<b><a href="https://www.facebook.com/groups/jugbd/ " target="_blank ">Java User Group Bangladesh </a></b><br>
-		<small>JUGBD is a volunteer organizations that strive to distribute java-related knowledge.</small><br>
-		<small>Member | Bangladesh</small>
-
+		</div>
 	</div>
+	<div class='card'>
 
-	<div class='post'>
+		<p>Additional Information</p>
+		<br>
 
-		<p>Reference</p><br>
-
-		<img style="height: 60px; float: right; " src="images/zakirsir.jpg ">
-		<b><a href="https://www.linkedin.com/in/md-zakir-hossain-7ba942115/ " target="_blank ">Md. Zakir Hossain</a></b><br>
-		<small>Sr. Java Programmer at Netizen IT Limited.</small><br>
-		<small>Phone Number: +880 1671-166491</small><br>
-		<small>Email: zakirho857@gmail.com</small><br><br>
-		
-		<br><br>
-
-		<img style="height: 60px; float: right; " src="images/asiqbhai.jpg ">
-		<b><a href="https://www.facebook.com/ashiqe92 " target="_blank ">Aktaruzzaman Ashique</a></b><br>
-		<small>Head of Software Department at Dhaka CentreNIC IT Limited.</small><br>
-		<small>Phone Number:  +880 1993-387754</small><br>
-		<small>Email: ashiqe50@gmail.com</small><br><br>
-		
-		<br><br>
-
-		<img style="height: 60px; float: right; " src="images/munnasir.jpg ">
-		<b><a href="https://www.facebook.com/success.hunger.3 " target="_blank ">Munna Chowdhory</a></b><br>
-		<small>Sr. Graphic Designer at United IT Bangladesh.</small><br>
-		<small>Phone Number: +880 1981-066266</small><br>
-		<small>Email: munna4munna@gmail.com</small>
-
-	</div>
-
-	<div " class='post'>
-
-		<p>Contract</p><br>
-
-		<b>Narayanganj, Fatulla 1421, Pagla  Rail Station, Islamia Bazar</b><br>
-		<small>House No: <b>02</b> | Block: <b>B</b> | House Name: <b>Nurul Islam Molla's House</b></small><br><br>
-		<small>Phone Number: +880 1712-020461</small><br>
-		<small>Home Number: +880 1716-527583</small><br>
-		<small>Email: moinulislamtech@gmail.com</small><br>
-		<small>Website: <a href="https://moinulislamtech.github.io">moinulislamtech.github.io</a></small><br>
-		<small>Social: Social Media Name/<b>moinulislamtech</b></small>
-
+		<small>
+			<span>Present Address : </span>
+			<div style="margin-left: 25px;">
+				<li>53 Purana Paltan, Baitul Abed, Dhaka,1000</li>
+			</div>
+			<span>Parmanent Address : </span>
+			<div style="margin-left: 25px;">
+				<li>Banskhali, Chittagong (Home Town)</li>
+			</div>
+		</small>
+		<br>
+		<small>Phone Number: <a href="tel:+880">+880 </a></small>
+		<br>
+		<small>Email: <a href="mailto:tonmoyrudra1@gmail.com">tonmoyrudra1@gmail.com</a></small>
+		<br>
 	</div>
 
 	<br>
 	<center>
-		<small style="color: gray;">&copy; 2017 Moinul Islam</small>
-
-		<a title="Download Resume" style="fill: gray;" href="#">
-			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			    width="10px" height="10px" viewBox="0 0 433.5 433.5" style="enable-background:new 0 0 433.5 433.5;" xml:space="preserve">
-				<g>
-					<g id="file-download">
-						<path d="M395.25,153h-102V0h-153v153h-102l178.5,178.5L395.25,153z M38.25,382.5v51h357v-51H38.25z" />
-					</g>
-				</g>
-			</svg>
-		</a>
+		<small style="color: gray; ">&copy; 2017-2018 Tonmoy Rudra</small>
+		<a href="images/cv.pdf" download="cv.pdf" title="Download Resume"><i class="fas fa-download"></i></a>
 
 	</center>
 
